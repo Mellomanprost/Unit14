@@ -22,7 +22,7 @@ namespace Unit14_8_
 
             Console.WriteLine();
            
-            foreach (var name2 in names.Where(ob => ob is string).OrderBy(ob => ob))
+            foreach (var name2 in objects.Where(ob => ob is string).OrderBy(ob => ob))
                 Console.WriteLine(name2);
         }
     }
