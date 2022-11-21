@@ -16,6 +16,22 @@ namespace Unit14._2._1
             {
                 Console.WriteLine(word.AnimalType);
             }
+
+
+            // Переменные в запросах, let
+
+            //var fullNameStudents = from s in students
+            //    // временная переменная для генерации полного имени
+            //    let fullName = s.Name + " Иванов"
+            //    // проекция в новую сущность с использованием новой переменной
+            //    select new
+            //    {
+            //        Name = fullName,
+            //        Age = s.Age
+            //    };
+
+            //foreach (var stud in fullNameStudents)
+            //    Console.WriteLine(stud.Name + ", " + stud.Age);
         }
     }
 }
