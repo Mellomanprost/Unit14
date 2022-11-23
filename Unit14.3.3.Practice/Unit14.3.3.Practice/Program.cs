@@ -18,7 +18,7 @@ namespace Unit14._3._3.Practice
                 new Contact("Сергей", "Брин", 799900000013, "serg@example.com"),
                 new Contact("Иннокентий", "Смоктуновский", 799900000013, "innokentii@example.com")
             };
-            var sortedPhoneBook = phoneBook.OrderBy(p => p.Name).ThenBy(p => p.LastName);
+            List<Contact> sortedPhoneBook = phoneBook.OrderBy(p => p.Name).ThenBy(p => p.LastName).ToList();
 
             while (true)
             {
