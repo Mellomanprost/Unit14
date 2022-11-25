@@ -8,7 +8,7 @@ namespace Unit14._3._3.Practice
     {
         static void Main(string[] args)
         {
-            //  создаем список с типом данных Contact и инициализируем его
+            ///  создаем список с типом данных Contact и инициализируем его
             var phoneBook = new List<Contact>
             {
                 new Contact("Игорь", "Николаев", 79990000001, "igor@example.com"),
@@ -32,7 +32,7 @@ namespace Unit14._3._3.Practice
                 }
                 else
                 {
-                    // пропускаем нужное количество элементов и берем 2 для показа на странице
+                    /// пропускаем нужное количество элементов и берем 2 для показа на странице
                     var pageContent = sortedPhoneBook.Skip((pageNumber - 1) * 2).Take(2);
                     Console.WriteLine();
 
@@ -42,22 +42,6 @@ namespace Unit14._3._3.Practice
                     Console.WriteLine();
                 }
             }
-        }
-
-        public class Contact
-        {
-            public Contact(string name, string lastName, long phoneNumber, String email)
-            {
-                Name = name;
-                LastName = lastName;
-                PhoneNumber = phoneNumber;
-                Email = email;
-            }
-
-            public String Name { get; }
-            public String LastName { get; }
-            public long PhoneNumber { get; }
-            public String Email { get; }
         }
     }
 }
